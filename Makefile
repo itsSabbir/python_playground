@@ -18,7 +18,7 @@ test:
 	pytest -q
 
 run:
-	python -m src.main
+	python -m python_playground.main
 
 check: fmt lint test
 

@@ -1,4 +1,4 @@
-from src.main import add
+from python_playground.main import add
 
 
 def test_add() -> None:

@@ -5,7 +5,7 @@
   "editor.formatOnSave": true,
   "python.formatting.provider": "black",
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "python.linting.enabled": true
 }
