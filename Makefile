@@ -32,3 +32,9 @@ db-up:
 
 db-down:
 	docker compose down -v
+
+unit:
+	pytest -q -m "not integration"
+
+itest:
+	pytest -q -m "integration"

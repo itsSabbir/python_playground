@@ -3,6 +3,9 @@ from __future__ import annotations
 import time
 
 import psycopg
+import pytest
+
+pytestmark = pytest.mark.integration
 
 
 def _wait_for_db(dsn: str, timeout_s: int = 30) -> None:
