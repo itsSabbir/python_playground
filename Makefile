@@ -1,4 +1,4 @@
-.PHONY: help fmt lint test run check
+.PHONY: help install fmt lint test run check
 
 help:
 	@echo "Targets:"
@@ -21,3 +21,8 @@ run:
 	python -m src.main
 
 check: fmt lint test
+
+install:
+	python -m pip install --upgrade pip
+	pip install -r requirements-dev.txt
+	pre-commit install
