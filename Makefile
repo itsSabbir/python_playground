@@ -26,3 +26,9 @@ install:
 	python -m pip install --upgrade pip
 	pip install -r requirements-dev.txt
 	pre-commit install
+
+db-up:
+	docker compose up -d
+
+db-down:
+	docker compose down -v
